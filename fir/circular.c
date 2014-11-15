@@ -24,12 +24,12 @@
 extern "C" {
 #endif // __cplusplus
 
-/*updateCircularFifo:
- *  
- *
+/*InsertCircularFIFO:
+ *  Inserts the sampled value in a suite place in the memory and update
+ *  the pivot "p" to handler the FIFO.
  */
 static void
-CircularFIFOUpdate(FirCircular * c, float newdata) {
+CircularFIFOInsert(FirCircular * c, float newdata) {
   c->p--;
   if( c->p == -1 ) c->p += c->n;
   c->A[p] = newdata;
