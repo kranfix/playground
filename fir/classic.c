@@ -3,36 +3,26 @@
 
 #include <github.com/kranfix/playground/fir.h>
 
+#ifndef __cplusplus
+extern "C" {
+#endif // __cplusplus
 
-struct Fir {
-   void * vals;
-   int n; // zise of the vals array
-} ;
 
-typedef struct fir fir;
-
-struct fir {
-   void * handler;
-} ;
-
-typedef struct Fir Fir;
-
-/*SimpleMean returns:
- *
- *    A[0] + A[1] + ... + A[n-1]
- *    --------------------------
- *                 n
- *
- *    Where:
- *      n: Filter order
- *  
+/*insertClassicFIFO:
+ *  Like a FIFO of a static number of elements,
+ *  a new data is added a the oldest is lost.
+ *  Newdata -> A[0] -> A[1] -> .... A[n-1]
  */
-static float SimpleMean(Fir * f) {
-  float m = f->vals[0];
-  for(int i = 1; i < n; i++) {
-    m += f->vals[i];
+static void
+insertClassicFIFO(int * A, int n, float newdata) {
+  for( int i = n - 1; i > 0; i-- ) {
+    A[i] = A[i-1];
   }
-  return m / n;
+  A[0] = newdata;
 }
+
+#ifndef __cplusplus
+}
+#endif // __cplusplus
 
 #endif // github_com_kranfix_playground_fir_c
