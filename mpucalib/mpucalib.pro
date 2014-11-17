@@ -15,7 +15,8 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mpucalib.cpp \
     maf.cpp \
-    ../../rs232/rs232.cpp
+    ../../rs232/rs232.cpp \
+    ../../rs232/rs232_linux.cpp
 
 HEADERS  += mpucalib.h \
     maf.h \
