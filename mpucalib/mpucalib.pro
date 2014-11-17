@@ -14,9 +14,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mpucalib.cpp \
-    maf.cpp
+    maf.cpp \
+    ../../rs232/rs232.cpp
 
 HEADERS  += mpucalib.h \
-    maf.h
+    maf.h \
+    ../../rs232/rs232.h
 
 FORMS    += mpucalib.ui
