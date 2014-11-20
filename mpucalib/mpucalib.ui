@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>334</width>
-    <height>148</height>
+    <width>436</width>
+    <height>178</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>30</y>
+      <y>40</y>
       <width>65</width>
       <height>21</height>
      </rect>
@@ -44,7 +44,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>90</y>
+      <y>80</y>
       <width>65</width>
       <height>21</height>
      </rect>
@@ -53,11 +53,11 @@
      <string>Axis z:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_accel">
+   <widget class="QLabel" name="label_rect_accel">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>0</y>
+      <x>60</x>
+      <y>10</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -66,17 +66,58 @@
      <string>Acceleration</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_accel_2">
+   <widget class="QLabel" name="label_angular_velocity">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>300</x>
       <y>0</y>
-      <width>111</width>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Angular
+velocity</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_angular_position">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>0</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Angular
+position</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_rect_velocity">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>61</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Angular velocity</string>
+     <string>Velocity</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_rect_position">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Position</string>
     </property>
    </widget>
   </widget>
@@ -85,7 +126,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>334</width>
+     <width>436</width>
      <height>27</height>
     </rect>
    </property>

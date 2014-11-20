@@ -12,3 +12,8 @@ mpucalib::~mpucalib()
 {
     delete ui;
 }
+
+void mpucalib::on_ok_clicked()
+{
+    
+}

@@ -1,5 +1,5 @@
-#ifndef MPUCALIB_H
-#define MPUCALIB_H
+#ifndef kranfix_playground_mpucalib_h
+#define kranfix_playground_mpucalib_h
 
 #include <QMainWindow>
 
@@ -15,8 +15,11 @@ public:
     explicit mpucalib(QWidget *parent = 0);
     ~mpucalib();
 
+private slots:
+    void on_ok_clicked();
+    
 private:
     Ui::mpucalib *ui;
 };
 
-#endif // MPUCALIB_H
+#endif // kranfix_playground_mpucalib_h
