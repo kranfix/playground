@@ -13,12 +13,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mpucalib.cpp \
-    ../../rs232/rs232.cc \
-    ../../dsp/maf/maf.cc
+        mpucalib.cpp
 
-HEADERS  += mpucalib.h \
-    ../../rs232/rs232.h \
-    ../../dsp/maf/maf.h
+HEADERS  += mpucalib.h
 
 FORMS    += mpucalib.ui
+
+INCLUDEPATH += $$(BUSRC)
+
+LIBS += -L$$(BUPKG)/linux_amd64/github.com/kranfix -lrs232cc \
+        -L$$(BUPKG)/linux_amd64/github.com/kranfix/dsp -lmafcc
